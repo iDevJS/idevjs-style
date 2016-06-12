@@ -1,0 +1,62 @@
+@import 'nib'
+normalize-css()
+
+@import 'layout'
+@import 'variables'
+@import 'tab-header'
+@import 'nav'
+@import 'pagination'
+@import 'breadcrumb'
+@import 'card'
+@import 'button'
+@import 'stream'
+@import 'post-item'
+@import 'comment-item'
+@import 'user-profile'
+
+body
+  background $body-bg
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+  text-rendering optimizeLegibility
+
+a 
+  color $link-color
+  text-decoration $link-decortation
+
+.material-icons 
+  font-size 12px
+  vertical-align middle
+
+.page-nav
+  padding 10px
+  background #fff
+  border-bottom 1px solid #eee
+  font-size $font-size-sm
+
+.side-card-body
+  padding 10px
+  img
+    max-width 100%
+
+ac-tab-header
+  display flex
+  padding 10px
+  border-bottom 1px solid $grey-lighter
+  width 100%
+  overflow auto
+
+.ac-pagination
+  display flex
+  align-items center
+  justify-content center
+  text-align center
+  
+.clearfix
+  clearfix()
+  
+.markdown-body 
+  box-sizing border-box
+  min-width 200px
+  max-width 980px
+  margin 0 auto
+  padding 45px

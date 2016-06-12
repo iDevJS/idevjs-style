@@ -1,0 +1,23 @@
+@import 'variables'
+
+.pagination 
+  ul
+    display flex
+    flex 1
+    align-items center
+    justify-content center
+    li
+      margin 0 2px
+      list-style none
+      cursor pointer
+      &.is-active
+      &.is-disabled
+        cursor auto
+      a
+        display block
+        min-width 32px
+        padding 3px 8px
+        background $brand-primary
+        color #fff
+        border-radius 3px
+        text-align center 

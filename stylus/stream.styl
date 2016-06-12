@@ -1,0 +1,27 @@
+@import 'variables'
+
+.stream
+  display flex
+  align-items flex-start
+  padding 0.625rem 0.75rem
+  border-bottom 1px solid $grey-lighter
+  min-height 3.6rem
+  .avatar 
+    width 3rem
+    height 3rem
+    border-radius $border-radius-lg
+  .stream-left
+    margin-right 1rem
+  .stream-body
+    flex 1
+    align-items flex-start
+    justify-content space-between
+  .stream-content
+    padding-top 0.625rem
+    font-size $font-size-sm
+
+.stream-metadata
+  background rgba(0,0,0,.02)
+  color #9AA8B1
+  box-shadow 0 0 2px rgba(0,0,0,.08) inset
+  border-radius 5px
