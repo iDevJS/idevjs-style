@@ -20,10 +20,11 @@ gulp.task('build', ['compile'], function () {
     './node_modules/github-markdown-css/github-markdown.css'
   ])
     .pipe(concat('app.css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('../idevjs-angular2/'))
+// .pipe(gulp.dest('dist'))
 })
 
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
   gulp.watch('./stylus/**/*.styl', ['build'])
 })
 
